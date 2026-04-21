@@ -1,0 +1,321 @@
+/* ============================================
+   GLOBAL THEME CONFIGURATION
+   ============================================ */
+
+/* ========== CSS Variables ========== */
+:root {
+  /* Font Family */
+  --font-family: 'Lato', sans-serif;
+
+  /* Typography Sizes */
+  --heading-1: 32px;
+  --heading-2: 28px;
+  --heading-3: 22px;
+  --heading-4: 24px;
+  --heading-5: 20px;
+  --heading-6: 16px;
+  --subtitle-1: 20px;
+  --subtitle-2: 18px;
+  --subtitle-3: 14px;
+  --body-1: 16px;
+  --body-2: 14px;
+  --body-3: 12px;
+
+  /* Spacing */
+  --spacing-1: 1px;
+  --spacing-2: 2px;
+  --spacing-10: 10px;
+  --spacing-15: 15px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-30: 30px;
+  --spacing-50: 50px;
+  --spacing-70: 70px;
+  --spacing-100: 100px;
+  --spacing-150: 150px;
+
+  /* Neutral Colors */
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+
+  /* Primary Colors (Purple/Blue) */
+  --primary-lighter: #F1F0F4;
+  --primary-light: #ECEBF2;
+  --primary-light-hover: #E2E1EC;
+  --primary-main: #3D3A80;
+  --primary-main-hover: #373473;
+  --primary-dark: #2E2C60;
+  --primary-dark-hover: #25234D;
+  --primary-darker: #1D1B44;
+
+  /* Blue Colors */
+  --blue-main: #4A90E2;
+
+  /* Red Colors */
+  --red-main: #E24A4A;
+
+  /* Grey Colors */
+  --grey-50: #F8F8F8;
+  --grey-100: #E0E0E0;
+  --grey-200: #C8C8C8;
+  --grey-300: #B0B0B0;
+  --grey-400: #989898;
+  --grey-500: #808080;
+  --grey-600: #686868;
+  --grey-700: #505050;
+  --grey-800: #383838;
+  --grey-900: #202020;
+
+  /* Extended spacing (design system alignment) */
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-22: 22px;
+
+  /* Radius & layout tokens */
+  --radius-pill: 999px;
+  --radius-card: 18px;
+  --radius-button: 10px;
+  --radius-sm: 4px;
+  --radius-xs: 2px;
+  --border-width-thin: 1px;
+
+  /* Sizing */
+  --size-logo: 56px;
+  --size-icon-md: 24px;
+  --size-touch: 44px;
+  --layout-search-min: 180px;
+  --layout-search-max: 860px;
+  --blur-sm: 8px;
+  --blur-md: 10px;
+
+  /* Alpha — white on dark UI */
+  --alpha-white-10: rgba(255, 255, 255, 0.1);
+  --alpha-white-12: rgba(255, 255, 255, 0.12);
+  --alpha-white-14: rgba(255, 255, 255, 0.14);
+  --alpha-white-18: rgba(255, 255, 255, 0.18);
+  --alpha-white-20: rgba(255, 255, 255, 0.2);
+  --alpha-white-22: rgba(255, 255, 255, 0.22);
+  --alpha-white-24: rgba(255, 255, 255, 0.24);
+  --alpha-white-25: rgba(255, 255, 255, 0.25);
+  --alpha-white-28: rgba(255, 255, 255, 0.28);
+  --alpha-white-30: rgba(255, 255, 255, 0.3);
+  --alpha-white-35: rgba(255, 255, 255, 0.35);
+  --alpha-white-45: rgba(255, 255, 255, 0.45);
+  --alpha-white-65: rgba(255, 255, 255, 0.65);
+  --alpha-white-82: rgba(255, 255, 255, 0.82);
+  --alpha-white-75: rgba(255, 255, 255, 0.75);
+  --alpha-white-76: rgba(255, 255, 255, 0.76);
+  --alpha-white-78: rgba(255, 255, 255, 0.78);
+  --alpha-white-80: rgba(255, 255, 255, 0.8);
+  --alpha-white-85: rgba(255, 255, 255, 0.85);
+  --alpha-white-88: rgba(255, 255, 255, 0.88);
+  --alpha-white-90: rgba(255, 255, 255, 0.9);
+  --alpha-white-92: rgba(255, 255, 255, 0.92);
+  --alpha-white-95: rgba(255, 255, 255, 0.95);
+  --surface-glass-light: rgba(255, 255, 255, 0.92);
+
+  /* Alpha — black / overlays */
+  --alpha-black-15: rgba(0, 0, 0, 0.15);
+  --alpha-black-18: rgba(0, 0, 0, 0.18);
+  --alpha-black-22: rgba(0, 0, 0, 0.22);
+  --alpha-black-25: rgba(0, 0, 0, 0.25);
+  --alpha-black-28: rgba(0, 0, 0, 0.28);
+  --alpha-black-30: rgba(0, 0, 0, 0.3);
+  --alpha-black-40: rgba(0, 0, 0, 0.4);
+
+  /* Alpha — primary brand */
+  --alpha-primary-04: rgba(61, 58, 128, 0.04);
+  --alpha-primary-08: rgba(61, 58, 128, 0.08);
+  --alpha-primary-12: rgba(61, 58, 128, 0.12);
+  --alpha-primary-14: rgba(61, 58, 128, 0.14);
+  --alpha-primary-18: rgba(61, 58, 128, 0.18);
+  --alpha-primary-25: rgba(61, 58, 128, 0.25);
+  --alpha-primary-35: rgba(61, 58, 128, 0.35);
+  --alpha-primary-10: rgba(61, 58, 128, 0.1);
+  --alpha-primary-20: rgba(61, 58, 128, 0.2);
+
+  /* Nav pill (distinct from --primary-main) */
+  --nav-pill-bg: rgba(66, 63, 141, 0.9);
+  --nav-pill-bg-hover: rgba(88, 84, 168, 0.98);
+
+  /* Hero image overlay (preserves existing look) */
+  --overlay-hero-deep-40: rgba(10, 10, 51, 0.4);
+  --overlay-hero-deep-20: rgba(10, 10, 51, 0.2);
+  --overlay-hero-deep-50: rgba(10, 10, 51, 0.5);
+  --overlay-hero-deep-30: rgba(10, 10, 51, 0.3);
+  --overlay-hero-bottom: rgba(0, 0, 0, 0.3);
+  --overlay-hero-bottom-strong: rgba(0, 0, 0, 0.4);
+  --overlay-hero-mobile-strong: rgba(10, 10, 51, 0.5);
+  --overlay-hero-mobile-mid: rgba(10, 10, 51, 0.3);
+
+  --alpha-white-20: rgba(255, 255, 255, 0.2);
+  --radius-card-relaxed: 22px;
+
+  /* Alpha — primary-darker surfaces */
+  --alpha-primary-darker-12: rgba(29, 27, 68, 0.12);
+  --alpha-primary-darker-95: rgba(29, 27, 68, 0.95);
+
+  /* Shadows (elevation) */
+  --shadow-card: 0 10px 24px rgba(0, 0, 0, 0.06);
+  --shadow-card-lg: 0 10px 28px rgba(0, 0, 0, 0.06);
+  --shadow-card-hover: 0 16px 40px rgba(0, 0, 0, 0.1);
+  --shadow-card-featured-hover: 0 20px 48px rgba(29, 27, 68, 0.12);
+  --shadow-elevated-sm: 0 6px 16px rgba(0, 0, 0, 0.18);
+  --shadow-elevated-md: 0 10px 22px rgba(0, 0, 0, 0.22);
+  --shadow-elevated-lg: 0 10px 24px rgba(0, 0, 0, 0.25);
+  --shadow-nav-pill: 0 1px 3px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  --shadow-nav-pill-hover: 0 6px 16px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.28);
+  --shadow-nav-active: 0 2px 5px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  --shadow-text-hero: 0 2px 10px rgba(0, 0, 0, 0.3);
+  --shadow-text-hero-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-discover: 0 4px 14px rgba(0, 0, 0, 0.15);
+  --shadow-discover-hover: 0 10px 28px rgba(0, 0, 0, 0.28);
+  --shadow-nav-mobile: 0 16px 32px rgba(0, 0, 0, 0.3);
+  --shadow-card-btn: 0 2px 8px rgba(61, 58, 128, 0.1);
+  --shadow-card-btn-hover: 0 8px 20px rgba(61, 58, 128, 0.35);
+  --shadow-card-btn-active: 0 2px 8px rgba(61, 58, 128, 0.2);
+  --shadow-inset-nav-mobile: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+  --shadow-focus-ring: 0 0 0 2px var(--color-white);
+}
+
+/* ========== Global Reset & Base Styles ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--body-1);
+  line-height: 1.6;
+  color: var(--primary-darker);
+  background-color: var(--grey-100);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ========== Typography ========== */
+h1, .h1 {
+  font-size: var(--heading-1);
+  font-weight: bold;
+  color: var(--primary-darker);
+  line-height: 1.2;
+  margin-bottom: var(--spacing-20);
+}
+
+h2, .h2 {
+  font-size: var(--heading-2);
+  font-weight: bold;
+  color: var(--primary-darker);
+  line-height: 1.2;
+  margin-bottom: var(--spacing-20);
+}
+
+h3, .h3 {
+  font-size: var(--heading-3);
+  font-weight: bold;
+  color: var(--primary-darker);
+  line-height: 1.2;
+  margin-bottom: var(--spacing-15);
+}
+
+h4, .h4 {
+  font-size: var(--heading-4);
+  font-weight: bold;
+  color: var(--primary-darker);
+  line-height: 1.2;
+  margin-bottom: var(--spacing-15);
+}
+
+h5, .h5 {
+  font-size: var(--heading-5);
+  font-weight: bold;
+  color: var(--primary-darker);
+  line-height: 1.2;
+  margin-bottom: var(--spacing-15);
+}
+
+h6, .h6 {
+  font-size: var(--heading-6);
+  font-weight: bold;
+  color: var(--primary-darker);
+  line-height: 1.2;
+  margin-bottom: var(--spacing-10);
+}
+
+.subtitle-1 {
+  font-size: var(--subtitle-1);
+  line-height: 1.5;
+  margin-bottom: var(--spacing-10);
+}
+
+.subtitle-2 {
+  font-size: var(--subtitle-2);
+  line-height: 1.5;
+  margin-bottom: var(--spacing-10);
+}
+
+.subtitle-3 {
+  font-size: var(--subtitle-3);
+  line-height: 1.5;
+  margin-bottom: var(--spacing-10);
+}
+
+.body-1 {
+  font-size: var(--body-1);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-10);
+}
+
+.body-2 {
+  font-size: var(--body-2);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-10);
+}
+
+/* ========== Utility Classes ========== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-20);
+}
+
+.section {
+  margin-bottom: var(--spacing-50);
+}
+
+/* Spacing Utilities */
+.mt-1 { margin-top: var(--spacing-1); }
+.mt-10 { margin-top: var(--spacing-10); }
+.mt-15 { margin-top: var(--spacing-15); }
+.mt-20 { margin-top: var(--spacing-20); }
+.mt-30 { margin-top: var(--spacing-30); }
+.mt-50 { margin-top: var(--spacing-50); }
+.mt-70 { margin-top: var(--spacing-70); }
+.mt-100 { margin-top: var(--spacing-100); }
+.mt-150 { margin-top: var(--spacing-150); }
+
+.mb-1 { margin-bottom: var(--spacing-1); }
+.mb-10 { margin-bottom: var(--spacing-10); }
+.mb-15 { margin-bottom: var(--spacing-15); }
+.mb-20 { margin-bottom: var(--spacing-20); }
+.mb-30 { margin-bottom: var(--spacing-30); }
+.mb-50 { margin-bottom: var(--spacing-50); }
+.mb-70 { margin-bottom: var(--spacing-70); }
+.mb-100 { margin-bottom: var(--spacing-100); }
+.mb-150 { margin-bottom: var(--spacing-150); }
+
+.p-1 { padding: var(--spacing-1); }
+.p-10 { padding: var(--spacing-10); }
+.p-15 { padding: var(--spacing-15); }
+.p-20 { padding: var(--spacing-20); }
+.p-30 { padding: var(--spacing-30); }
+.p-50 { padding: var(--spacing-50); }
+.p-70 { padding: var(--spacing-70); }
+.p-100 { padding: var(--spacing-100); }
+.p-150 { padding: var(--spacing-150); }
+

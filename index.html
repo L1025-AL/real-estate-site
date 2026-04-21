@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maventa Estate - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/home.css">
+</head>
+<body>
+    <div class="hero-page">
+    <header class="hero-section" id="top">
+        <div class="hero-header">
+            <div class="hero-header-container">
+                <a href="index.html" class="hero-logo">
+                    <img src="assets/Logo.png" alt="Maventa Estate Logo">
+                </a>
+
+                <nav class="hero-nav">
+                    <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+                    <a href="pages/properties.html" class="nav-link">Properties</a>
+                    <a href="pages/services.html" class="nav-link">Services</a>
+                    <a href="pages/about.html" class="nav-link">About Us</a>
+                    <a href="pages/team.html" class="nav-link">Team</a>
+                </nav>
+
+                <a href="#contact" class="btn-talk">LET'S TALK!</a>
+            </div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-text-wrapper">
+                <h1 class="hero-title">MAVENTA</h1>
+                <p class="hero-tagline">We redefine the way you discover, visit and choose your home.</p>
+            </div>
+        </div>
+
+        <div class="hero-background" aria-hidden="true">
+            <img src="assets/home/FirstSectionBg.png" alt="" class="hero-bg-image">
+        </div>
+
+        <div class="hero-discover-wrapper">
+            <a href="#featured" class="hero-discover-btn">
+                <span>DISCOVER MORE!</span>
+                <svg class="discover-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M7 17L17 7M17 7H10M17 7V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <div class="hero-search-wrapper hero-search-below">
+        <form class="hero-search" action="pages/properties.html" method="get">
+            <label class="sr-only" for="q">Caută proprietăți</label>
+            <input id="q" name="q" type="search" placeholder="Ex: 2 camere, Cluj, parcare…" />
+
+            <label class="sr-only" for="type">Tip</label>
+            <select id="type" name="type">
+                <option value="">Tip</option>
+                <option value="apartment">Apartament</option>
+                <option value="house">Casă</option>
+                <option value="land">Teren</option>
+            </select>
+
+            <button class="hero-search-btn" type="submit">
+                <span>Caută</span>
+                <svg class="discover-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </form>
+    </div>
+    </div>
+
+    <main class="home-main">
+        <section class="stats-showcase" id="dreams" aria-labelledby="stats-showcase-heading">
+            <div class="container stats-showcase-inner">
+                <div class="stats-showcase-content">
+                    <h2 id="stats-showcase-heading" class="stats-showcase-heading">
+                        <span class="stats-showcase-heading-line">BUILDING DREAMS,</span>
+                        <span class="stats-showcase-heading-line">CREATING COMMUNITIES</span>
+                    </h2>
+                    <p class="stats-showcase-lead body-1">
+                        From first visit to final signature, we combine local insight with a calm, professional experience—so you always know what comes next.
+                    </p>
+                    <div class="stats-showcase-stats">
+                        <div class="stats-showcase-stat">
+                            <span class="stats-showcase-number">10</span>
+                            <span class="stats-showcase-label">Years of experience</span>
+                        </div>
+                        <div class="stats-showcase-stat">
+                            <span class="stats-showcase-number">500</span>
+                            <span class="stats-showcase-label">Satisfied customers</span>
+                        </div>
+                    </div>
+                    <div class="stats-showcase-actions">
+                        <a class="stats-showcase-cta" href="pages/properties.html">View More</a>
+                        <div class="stats-showcase-avatars" aria-hidden="true">
+                            <img class="stats-showcase-avatar" src="https://i.pravatar.cc/56?img=12" alt="" width="48" height="48" loading="lazy" decoding="async" />
+                            <img class="stats-showcase-avatar" src="https://i.pravatar.cc/56?img=33" alt="" width="48" height="48" loading="lazy" decoding="async" />
+                            <img class="stats-showcase-avatar" src="https://i.pravatar.cc/56?img=45" alt="" width="48" height="48" loading="lazy" decoding="async" />
+                            <img class="stats-showcase-avatar" src="https://i.pravatar.cc/56?img=52" alt="" width="48" height="48" loading="lazy" decoding="async" />
+                        </div>
+                    </div>
+                </div>
+                <figure class="stats-showcase-media">
+                    <img
+                        class="stats-showcase-image"
+                        src="assets/home/BuildingDreams.png"
+                        alt="Modern residence with pool at dusk"
+                        width="800"
+                        height="600"
+                        loading="lazy"
+                    />
+                </figure>
+            </div>
+        </section>
+
+        <!-- Featured properties -->
+        <section class="home-section" id="featured" aria-labelledby="featured-title">
+            <div class="container">
+                <div class="section-head">
+                    <h2 id="featured-title">Proprietăți recomandate</h2>
+                    <a class="section-link" href="pages/properties.html">Vezi toate</a>
+                </div>
+
+                <div class="card-grid">
+                    <article class="property-card">
+                        <div class="property-media" aria-hidden="true"></div>
+                        <div class="property-body">
+                            <h3 class="property-title">Apartament 2 camere, centru</h3>
+                            <p class="property-meta">Cluj-Napoca • 58 m² • Etaj 3</p>
+                            <div class="property-footer">
+                                <span class="property-price">€135,000</span>
+                                <a class="property-cta" href="pages/property-details.html">Detalii</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="property-card">
+                        <div class="property-media" aria-hidden="true"></div>
+                        <div class="property-body">
+                            <h3 class="property-title">Casă modernă cu grădină</h3>
+                            <p class="property-meta">București • 165 m² • 5 camere</p>
+                            <div class="property-footer">
+                                <span class="property-price">€320,000</span>
+                                <a class="property-cta" href="pages/property-details.html">Detalii</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="property-card">
+                        <div class="property-media" aria-hidden="true"></div>
+                        <div class="property-body">
+                            <h3 class="property-title">Garsonieră pentru investiție</h3>
+                            <p class="property-meta">Timișoara • 28 m² • Randament bun</p>
+                            <div class="property-footer">
+                                <span class="property-price">€59,900</span>
+                                <a class="property-cta" href="pages/property-details.html">Detalii</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="home-section home-section-alt" id="services" aria-labelledby="services-title">
+            <div class="container">
+                <div class="section-head">
+                    <h2 id="services-title">Serviciile noastre</h2>
+                    <p class="section-subtitle">Tot ce ai nevoie ca să cumperi sau să vinzi fără stres.</p>
+                </div>
+
+                <div class="service-grid">
+                    <article class="service-card">
+                        <h3 class="service-title">Consultanță personalizată</h3>
+                        <p class="service-text">Stabilim bugetul, criteriile și strategia potrivită pentru tine.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3 class="service-title">Evaluare & listare</h3>
+                        <p class="service-text">Preț corect, prezentare profesionistă și promovare targetată.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3 class="service-title">Asistență juridică</h3>
+                        <p class="service-text">Documente, antecontract, contract final — totul verificat.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3 class="service-title">Vizionări & negociere</h3>
+                        <p class="service-text">Programare rapidă, feedback, negociere în avantajul tău.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <img src="assets/Logo.png" alt="Maventa Estate Logo" />
+                <p class="footer-text">Agenție imobiliară pentru locuințe și investiții premium.</p>
+            </div>
+
+            <div class="footer-col">
+                <h2 class="footer-title">Contact</h2>
+                <ul class="footer-list">
+                    <li><a href="tel:+40000000000">+40 000 000 000</a></li>
+                    <li><a href="mailto:contact@maventa.example">contact@maventa.example</a></li>
+                    <li>Str. Exemplu 10, România</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h2 class="footer-title">Link-uri</h2>
+                <ul class="footer-list">
+                    <li><a href="pages/properties.html">Proprietăți</a></li>
+                    <li><a href="#services">Servicii</a></li>
+                    <li><a href="#top">Sus</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">© <span id="y"></span> Maventa Estate. Toate drepturile rezervate.</div>
+        </div>
+    </footer>
+
+    <script defer src="js/main.js"></script>
+</body>
+</html>
+
