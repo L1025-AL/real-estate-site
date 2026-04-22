@@ -40,7 +40,7 @@
   }
 
   setupMobileNav({
-    buttonSelector: ".hero-header .mobile-menu-btn",
+    buttonSelector: ".hero-header-container .mobile-menu-btn",
     navSelector: ".hero-nav",
     closeScopeSelector: ".hero-header-container",
   });
@@ -55,5 +55,17 @@
     document.getElementById("footer-year") || document.getElementById("y");
   if (yearEl) {
     yearEl.textContent = String(new Date().getFullYear());
+  }
+
+  const faqRoot = document.querySelector(".faq-accordion");
+  if (faqRoot) {
+    faqRoot.querySelectorAll("details").forEach((details) => {
+      details.addEventListener("toggle", () => {
+        if (!details.open) return;
+        faqRoot.querySelectorAll("details").forEach((other) => {
+          if (other !== details) other.removeAttribute("open");
+        });
+      });
+    });
   }
 })();

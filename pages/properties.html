@@ -1,182 +1,416 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Maventa Estate - Properties</title>
+    <title>Maventa Estate — Properties</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/design-system.css" />
     <link rel="stylesheet" href="../styles/pages.css" />
+    <link rel="stylesheet" href="../styles/home.css" />
+    <link rel="stylesheet" href="../styles/properties-page.css" />
   </head>
-  <body>
-    <div class="page-shell">
-      <header class="page-header">
-        <div class="page-header-inner">
-          <a class="page-brand" href="../index.html">
-            <img src="../assets/Logo.png" alt="Maventa Estate — home" width="40" height="40" />
-          </a>
+  <body class="properties-page">
+    <div class="page-shell page-shell--properties">
+      <section class="prop-page-hero" aria-labelledby="prop-hero-title">
+        <div class="prop-page-hero__inner">
+          <div class="page-header-inner prop-page-hero__bar">
+            <a class="page-brand" href="home.html">
+              <img src="../assets/Logo.png" alt="Maventa Estate — home" width="40" height="40" />
+            </a>
 
-          <nav class="page-nav" id="page-navigation" aria-label="Primary">
-            <a href="../index.html" class="page-nav-link">Home</a>
-            <a href="properties.html" class="page-nav-link" aria-current="page">Properties</a>
-            <a href="services.html" class="page-nav-link">Services</a>
-            <a href="about.html" class="page-nav-link">About</a>
-            <a href="team.html" class="page-nav-link">Team</a>
-          </nav>
+            <nav class="page-nav" id="page-navigation" aria-label="Primary">
+              <a href="home.html" class="page-nav-link">Home</a>
+              <a href="properties.html" class="page-nav-link" aria-current="page">Properties</a>
+              <a href="services.html" class="page-nav-link">Services</a>
+              <a href="about.html" class="page-nav-link">About Us</a>
+              <a href="team.html" class="page-nav-link">Team</a>
+            </nav>
 
-          <button
-            type="button"
-            class="page-mobile-menu-btn"
-            aria-label="Toggle menu"
-            aria-controls="page-navigation"
-            aria-expanded="false"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-      </header>
-
-      <main class="page-main">
-        <div class="page-main-inner">
-          <header class="page-intro">
-            <h1 class="page-title">Properties</h1>
-            <p class="page-lead body-1">
-              Listarea proprietăților (grid, filtre, căutare). De aici vei trimite
-              utilizatorul către <code>property-details.html</code>.
-            </p>
-          </header>
-
-          <div class="properties-grid">
-            <article class="property-card">
-              <div class="property-card-media">
-                <img
-                  src="../assets/home/FirstSectionBg.png"
-                  alt="Exterior Skyline Residence"
-                  width="400"
-                  height="300"
-                  loading="lazy"
-                />
-              </div>
-              <div class="property-card-body">
-                <h2 class="property-card-title h5">Skyline Residence</h2>
-                <p class="property-card-price">€ 485,000</p>
-                <p class="property-card-location">Bucharest, Sector 1</p>
-                <a href="property-details.html" class="property-card-link">View details</a>
-              </div>
-            </article>
-
-            <article class="property-card">
-              <div class="property-card-media">
-                <img
-                  src="../assets/home/FirstSectionBg.png"
-                  alt="Garden view Riverside Loft"
-                  width="400"
-                  height="300"
-                  loading="lazy"
-                />
-              </div>
-              <div class="property-card-body">
-                <h2 class="property-card-title h5">Riverside Loft</h2>
-                <p class="property-card-price">€ 320,000</p>
-                <p class="property-card-location">Cluj-Napoca, Mărăști</p>
-                <a href="property-details.html" class="property-card-link">View details</a>
-              </div>
-            </article>
-
-            <article class="property-card">
-              <div class="property-card-media">
-                <img
-                  src="../assets/home/FirstSectionBg.png"
-                  alt="Pool area Marina Villa"
-                  width="400"
-                  height="300"
-                  loading="lazy"
-                />
-              </div>
-              <div class="property-card-body">
-                <h2 class="property-card-title h5">Marina Villa</h2>
-                <p class="property-card-price">€ 890,000</p>
-                <p class="property-card-location">Constanța, Mamaia Nord</p>
-                <a href="property-details.html" class="property-card-link">View details</a>
-              </div>
-            </article>
-
-            <article class="property-card">
-              <div class="property-card-media">
-                <img
-                  src="../assets/home/FirstSectionBg.png"
-                  alt="Urban apartment City Nest"
-                  width="400"
-                  height="300"
-                  loading="lazy"
-                />
-              </div>
-              <div class="property-card-body">
-                <h2 class="property-card-title h5">City Nest</h2>
-                <p class="property-card-price">€ 210,000</p>
-                <p class="property-card-location">Timișoara, Centru</p>
-                <a href="property-details.html" class="property-card-link">View details</a>
-              </div>
-            </article>
-
-            <article class="property-card">
-              <div class="property-card-media">
-                <img
-                  src="../assets/home/FirstSectionBg.png"
-                  alt="Family house Green Oaks"
-                  width="400"
-                  height="300"
-                  loading="lazy"
-                />
-              </div>
-              <div class="property-card-body">
-                <h2 class="property-card-title h5">Green Oaks</h2>
-                <p class="property-card-price">€ 395,000</p>
-                <p class="property-card-location">Brașov, Stupini</p>
-                <a href="property-details.html" class="property-card-link">View details</a>
-              </div>
-            </article>
-
-            <article class="property-card">
-              <div class="property-card-media">
-                <img
-                  src="../assets/home/FirstSectionBg.png"
-                  alt="Penthouse Aurora"
-                  width="400"
-                  height="300"
-                  loading="lazy"
-                />
-              </div>
-              <div class="property-card-body">
-                <h2 class="property-card-title h5">Aurora Penthouse</h2>
-                <p class="property-card-price">€ 1,120,000</p>
-                <p class="property-card-location">Bucharest, Floreasca</p>
-                <a href="property-details.html" class="property-card-link">View details</a>
-              </div>
-            </article>
+            <div class="prop-page-hero__end">
+              <button
+                type="button"
+                class="page-mobile-menu-btn"
+                aria-label="Toggle menu"
+                aria-controls="page-navigation"
+                aria-expanded="false"
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <a href="#property-results" class="prop-page-hero__cta">LET'S TALK!</a>
+            </div>
           </div>
 
-          <div class="card">
-            <p class="body-1">
-              Placeholder: aici vor intra filtre, sortare și paginare.
-            </p>
-            <p class="body-2">
-              Exemplu link:
-              <a href="property-details.html">Vezi detalii proprietate</a>
-            </p>
+          <div class="prop-page-hero__body">
+            <div class="prop-page-hero__copy">
+              <h1 id="prop-hero-title" class="prop-page-hero__title">
+                Discover the Best Properties on the Market
+              </h1>
+              <p class="prop-page-hero__subtitle">
+                Browse verified listings and find the right space with guidance from our experienced team.
+              </p>
+              <dl class="prop-page-hero__stats">
+                <div class="prop-page-hero__stat">
+                  <dt class="prop-page-hero__stat-num">3,500+</dt>
+                  <dd class="prop-page-hero__stat-label">Satisfied clients</dd>
+                </div>
+                <div class="prop-page-hero__stat">
+                  <dt class="prop-page-hero__stat-num">1,200+</dt>
+                  <dd class="prop-page-hero__stat-label">Verified listings</dd>
+                </div>
+              </dl>
+            </div>
+            <figure class="prop-page-hero__figure">
+              <img
+                src="../assets/home/FirstSectionBg.png"
+                alt=""
+                width="1200"
+                height="800"
+                loading="eager"
+              />
+            </figure>
           </div>
         </div>
+      </section>
+
+      <main>
+        <section class="prop-listing-intro" aria-labelledby="prop-listing-heading">
+          <div class="container">
+            <h2 id="prop-listing-heading" class="prop-listing-intro__title">
+              DISCOVER HOMES TAILORED TO YOUR LIFESTYLE AND NEEDS
+            </h2>
+            <p class="prop-listing-intro__subtitle">
+              Explore a diverse selection of properties to suit every lifestyle. Whether you are looking for a modern home or a centrally located apartment, we have options for all your needs.
+            </p>
+          </div>
+        </section>
+
+        <section class="prop-listing-columns" aria-label="Property listings">
+          <div class="container prop-listing-columns__inner">
+            <section class="properties-section prop-listing-embed" id="property-results">
+              <div class="properties-section__filters" role="toolbar" aria-label="Property type filters">
+                <button type="button" class="properties-section__filter properties-section__filter--active" aria-pressed="true">All</button>
+                <button type="button" class="properties-section__filter" aria-pressed="false">Apartments</button>
+                <button type="button" class="properties-section__filter" aria-pressed="false">Homes</button>
+                <button type="button" class="properties-section__filter" aria-pressed="false">Offices</button>
+                <button type="button" class="properties-section__filter" aria-pressed="false">Commercial</button>
+                <button type="button" class="properties-section__filter" aria-pressed="false">Industrial</button>
+                <button type="button" class="properties-section__filter" aria-pressed="false">Lands</button>
+                <button type="button" class="properties-section__filter" aria-pressed="false">Luxury Properties</button>
+                <button type="button" class="properties-section__filter" aria-pressed="false">For Rent</button>
+                <button type="button" class="properties-section__filter" aria-pressed="false">For Sale</button>
+              </div>
+
+              <div class="properties-section__grid">
+                <article class="property-card">
+                  <figure class="property-card__media">
+                    <img
+                      class="property-card__image"
+                      src="../assets/properties/Rustic.png"
+                      width="800"
+                      height="500"
+                      alt="Spacious living room with leather sofa and warm lighting"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="property-card__row">
+                    <span class="property-card__price">$2,500/mo</span>
+                    <span class="property-card__badge property-card__badge--rent">For Rent</span>
+                  </div>
+                  <div class="property-card__body">
+                    <h3 class="property-card__name">Rustic Ranch House</h3>
+                    <p class="property-card__description">Fully furnished studio with natural light, modern kitchen, and easy access to public transport. Ideal for young professionals.</p>
+                    <a class="property-card__more" href="property-details.html">View More</a>
+                  </div>
+                </article>
+                <article class="property-card">
+                  <figure class="property-card__media">
+                    <img
+                      class="property-card__image"
+                      src="../assets/properties/Luxury.png"
+                      width="800"
+                      height="500"
+                      alt="Bright bedroom with minimalist decor"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="property-card__row">
+                    <span class="property-card__price">$310,500</span>
+                    <span class="property-card__badge property-card__badge--sale">For Sale</span>
+                  </div>
+                  <div class="property-card__body">
+                    <h3 class="property-card__name">Luxury Villa with Ocean View</h3>
+                    <p class="property-card__description">A spacious 4-bedroom house with an open-concept kitchen, large backyard, and two-car garage — perfect for family life.</p>
+                    <a class="property-card__more" href="property-details.html">View More</a>
+                  </div>
+                </article>
+                <article class="property-card">
+                  <figure class="property-card__media">
+                    <img
+                      class="property-card__image"
+                      src="../assets/properties/Contemporary.png"
+                      width="800"
+                      height="500"
+                      alt="Contemporary home office with plants and natural wood"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="property-card__row">
+                    <span class="property-card__price">$250,500</span>
+                    <span class="property-card__badge property-card__badge--sale">For Sale</span>
+                  </div>
+                  <div class="property-card__body">
+                    <h3 class="property-card__name">Contemporary House in Austin</h3>
+                    <p class="property-card__description">Stylish 3-bedroom home with clean lines, minimalist interior, and solar panels. Located in a quiet residential area close to schools and parks.</p>
+                    <a class="property-card__more" href="property-details.html">View More</a>
+                  </div>
+                </article>
+                <article class="property-card">
+                  <figure class="property-card__media">
+                    <img
+                      class="property-card__image"
+                      src="../assets/properties/3-Bedroom.png"
+                      width="800"
+                      height="500"
+                      alt="Family living area with seating and natural light"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="property-card__row">
+                    <span class="property-card__price">$3,500/mo</span>
+                    <span class="property-card__badge property-card__badge--rent">For Rent</span>
+                  </div>
+                  <div class="property-card__body">
+                    <h3 class="property-card__name">3-Bedroom Family Home</h3>
+                    <p class="property-card__description">Comfortable and bright, this rental home offers a fenced backyard, large living room, and a quiet neighborhood — pet friendly.</p>
+                    <a class="property-card__more" href="property-details.html">View More</a>
+                  </div>
+                </article>
+                <article class="property-card">
+                  <figure class="property-card__media">
+                    <img
+                      class="property-card__image"
+                      src="../assets/properties/Downtown.png"
+                      width="800"
+                      height="500"
+                      alt="Open loft-style interior with desk area"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="property-card__row">
+                    <span class="property-card__price">$200,000</span>
+                    <span class="property-card__badge property-card__badge--sale">For Sale</span>
+                  </div>
+                  <div class="property-card__body">
+                    <h3 class="property-card__name">Downtown Chicago Loft</h3>
+                    <p class="property-card__description">Spacious loft with high ceilings and a renovated interior. Perfect for creatives and professionals seeking a modern lifestyle.</p>
+                    <a class="property-card__more" href="property-details.html">View More</a>
+                  </div>
+                </article>
+                <article class="property-card">
+                  <figure class="property-card__media">
+                    <img
+                      class="property-card__image"
+                      src="../assets/properties/Cozy.png"
+                      width="800"
+                      height="500"
+                      alt="Cozy living space with sofa and soft lighting"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="property-card__row">
+                    <span class="property-card__price">$350,000</span>
+                    <span class="property-card__badge property-card__badge--sale">For Sale</span>
+                  </div>
+                  <div class="property-card__body">
+                    <h3 class="property-card__name">Cozy Cottage Near Lake Tahoe</h3>
+                    <p class="property-card__description">Charming 2-bedroom cottage surrounded by nature, ideal for vacation stays or rental. Includes a fireplace and a private garden.</p>
+                    <a class="property-card__more" href="property-details.html">View More</a>
+                  </div>
+                </article>
+              </div>
+
+              <nav class="properties-section__pagination" aria-label="Main results pagination">
+                <button type="button" class="properties-pagination__btn" disabled aria-disabled="true">Previous</button>
+                <div class="properties-pagination__pages">
+                  <button type="button" class="properties-pagination__page properties-pagination__page--active" aria-current="page">1</button>
+                  <button type="button" class="properties-pagination__page">2</button>
+                  <button type="button" class="properties-pagination__page">3</button>
+                  <span class="properties-pagination__ellipsis" aria-hidden="true">…</span>
+                  <button type="button" class="properties-pagination__page">8</button>
+                  <button type="button" class="properties-pagination__page">9</button>
+                </div>
+                <button type="button" class="properties-pagination__btn">Next</button>
+              </nav>
+            
+                <button type="button" class="properties-pagination__btn">Next</button>
+              </nav>
+            </aside>
+          </div>
+        </section>
+
+        <section class="faq-section" id="faq" aria-labelledby="faq-heading">
+            <div class="container">
+                <div class="faq-section__panel">
+                    <header class="faq-section__header">
+                        <h2 id="faq-heading" class="faq-section__title">FREQUENTLY ASKED QUESTIONS</h2>
+                        <p class="faq-section__intro">
+                            Clear answers about buying, selling, and working with Maventa — open any topic below.
+                        </p>
+                    </header>
+                    <div class="faq-accordion">
+                        <details class="faq-item" open>
+                            <summary class="faq-item__summary">
+                                <span class="faq-item__question">1. How can I properly value my property before I put it up for sale?</span>
+                                <span class="faq-item__icon" aria-hidden="true"></span>
+                            </summary>
+                            <div class="faq-item__body">
+                                <p>
+                                    We recommend a comparative market analysis of recent sales near you, plus adjustments for condition, upgrades, and timing. Our agents can prepare a professional valuation and a pricing strategy tailored to your goals.
+                                </p>
+                            </div>
+                        </details>
+                        <details class="faq-item">
+                            <summary class="faq-item__summary">
+                                <span class="faq-item__question">2. What are the steps to buy a property through the agency?</span>
+                                <span class="faq-item__icon" aria-hidden="true"></span>
+                            </summary>
+                            <div class="faq-item__body">
+                                <p>
+                                    Typically: define your budget and preferences, view shortlisted properties, make an offer, complete due diligence and financing, then sign contracts and close. We guide you at each step and coordinate with lenders and legal counsel as needed.
+                                </p>
+                            </div>
+                        </details>
+                        <details class="faq-item">
+                            <summary class="faq-item__summary">
+                                <span class="faq-item__question">3. What documents are required to conclude a real estate transaction?</span>
+                                <span class="faq-item__icon" aria-hidden="true"></span>
+                            </summary>
+                            <div class="faq-item__body">
+                                <p>
+                                    Common requirements include proof of identity, title and survey documents, disclosure forms, purchase agreement, and lender paperwork when a mortgage is involved. We provide a checklist specific to your sale or purchase.
+                                </p>
+                            </div>
+                        </details>
+                        <details class="faq-item">
+                            <summary class="faq-item__summary">
+                                <span class="faq-item__question">4. Does the agency offer rental property management services?</span>
+                                <span class="faq-item__icon" aria-hidden="true"></span>
+                            </summary>
+                            <div class="faq-item__body">
+                                <p>
+                                    Yes. We can help market your rental, screen tenants, prepare leases, and coordinate ongoing management tasks so landlords and tenants have a smooth experience.
+                                </p>
+                            </div>
+                        </details>
+                        <details class="faq-item">
+                            <summary class="faq-item__summary">
+                                <span class="faq-item__question">5. How can I schedule a viewing of a property?</span>
+                                <span class="faq-item__icon" aria-hidden="true"></span>
+                            </summary>
+                            <div class="faq-item__body">
+                                <p>
+                                    Call us, email, or use the contact form on this page with the property reference and your preferred times. We will confirm an appointment and send any access details you need.
+                                </p>
+                            </div>
+                        </details>
+                        <details class="faq-item">
+                            <summary class="faq-item__summary">
+                                <span class="faq-item__question">6. What commission does the agency charge for brokerage services?</span>
+                                <span class="faq-item__icon" aria-hidden="true"></span>
+                            </summary>
+                            <div class="faq-item__body">
+                                <p>
+                                    Commission structures depend on the type of transaction and local market practice. We explain fees upfront in writing so there are no surprises before you sign a representation agreement.
+                                </p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+            <div class="container contact-section__inner">
+                <div class="contact-section__info">
+                    <h2 id="contact-heading" class="contact-section__title">Contact Us</h2>
+                    <p class="contact-section__lead">
+                        Whether you are buying, selling, or exploring options, we are here to help. Reach out and we will respond as soon as possible.
+                    </p>
+                    <h3 class="contact-section__subhead">Office location</h3>
+                    <ul class="contact-section__list">
+                        <li class="contact-section__row">
+                            <span class="contact-section__icon" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 10.91a16 16 0 0 0 6 6l2.27-2.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                            <a class="contact-section__link" href="tel:+12125550187">+1 (212) 555-0187</a>
+                        </li>
+                        <li class="contact-section__row">
+                            <span class="contact-section__icon" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.5"/><path d="m22 6-10 7L2 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                            <a class="contact-section__link" href="mailto:contact@maventa.com">contact@maventa.com</a>
+                        </li>
+                        <li class="contact-section__row">
+                            <span class="contact-section__icon" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
+                            </span>
+                            <span class="contact-section__text">1234 Madison Avenue, Suite 500, New York, NY 10022, United States</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-section__form-wrap">
+                    <form class="contact-section__form" action="#" method="post">
+                        <label class="sr-only" for="contact-name">Name</label>
+                        <input id="contact-name" class="contact-section__input" type="text" name="name" placeholder="Name" autocomplete="name" required>
+                        <label class="sr-only" for="contact-phone">Phone number</label>
+                        <input id="contact-phone" class="contact-section__input" type="tel" name="phone" placeholder="Phone number" autocomplete="tel">
+                        <label class="sr-only" for="contact-message">Message</label>
+                        <textarea id="contact-message" class="contact-section__textarea" name="message" rows="5" placeholder="Leave your detailed message..." required></textarea>
+                        <button type="submit" class="contact-section__submit">Submit!</button>
+                    </form>
+                </div>
+            </div>
+        </section>
       </main>
 
-      <footer class="page-footer">
-        <div class="page-footer-inner">© <span id="y"></span> Maventa Estate</div>
+      <footer class="home-site-footer">
+        <div class="home-site-footer__curve" aria-hidden="true"></div>
+        <div class="container home-site-footer__top">
+            <div class="home-site-footer__cta-copy">
+                <h2 class="home-site-footer__cta-title">Ready To Work With Us?</h2>
+                <p class="home-site-footer__cta-text">
+                    Tell us about your goals and we will match you with the right specialist — from first conversation to closing.
+                </p>
+            </div>
+            <a href="#contact" class="home-site-footer__cta-btn" aria-label="Go to contact form">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M7 17L17 7M17 7H10M17 7V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+        <div class="container home-site-footer__meta">
+            <p class="home-site-footer__col home-site-footer__address">1234 Madison Avenue, Suite 500, New York, NY 10022, United States</p>
+            <div class="home-site-footer__col home-site-footer__reach">
+                <a href="tel:+12125550187">+1 (212) 555-0187</a>
+                <a href="mailto:contact@maventa.com">contact@maventa.com</a>
+            </div>
+            <p class="home-site-footer__col home-site-footer__legal">All rights reserved © <span id="footer-year">2026</span>, Maventa</p>
+            <div class="home-site-footer__col home-site-footer__social">
+                <a href="#" class="home-site-footer__social-link">Facebook</a>
+                <a href="#" class="home-site-footer__social-link">Instagram</a>
+                <a href="#" class="home-site-footer__social-link">X / Twitter</a>
+            </div>
+        </div>
+        <p class="home-site-footer__brand">MAVENTA</p>
       </footer>
     </div>
 
