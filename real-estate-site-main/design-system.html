@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design System - Tema Globală</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/design-system.css" />
+  </head>
+  <body>
+    <div class="design-system-page">
+      <div class="design-system-container">
+        <!-- Left Column: Typography and Spacing -->
+        <div class="design-system-column">
+          <!-- Typography Section -->
+          <div class="typography-section section">
+            <h1>Typography</h1>
+            <div class="font-family">Font Family: Lato</div>
+
+            <!-- Headings -->
+            <div class="typography-item">
+              <h1 class="example-text">This is a heading</h1>
+              <div class="size-label">Heading 1 (32px)</div>
+            </div>
+
+            <div class="typography-item">
+              <h2 class="example-text">This is a heading</h2>
+              <div class="size-label">Heading 2 (28px)</div>
+            </div>
+
+            <div class="typography-item">
+              <h3 class="example-text">This is a heading</h3>
+              <div class="size-label">Heading 3 (22px)</div>
+            </div>
+
+            <div class="typography-item">
+              <h4 class="example-text">This is a heading</h4>
+              <div class="size-label">Heading 4 (24px)</div>
+            </div>
+
+            <div class="typography-item">
+              <h5 class="example-text">This is a heading</h5>
+              <div class="size-label">Heading 5 (20px)</div>
+            </div>
+
+            <div class="typography-item">
+              <h6 class="example-text">This is a heading</h6>
+              <div class="size-label">Heading 6 (16px)</div>
+            </div>
+
+            <!-- Subtitles -->
+            <div class="typography-item">
+              <div class="subtitle-1">Lorem Ipsum</div>
+              <div class="size-label">Subtitle 1 (20px)</div>
+            </div>
+
+            <div class="typography-item">
+              <div class="subtitle-2">Lorem Ipsum</div>
+              <div class="size-label">Subtitle 2 (18px)</div>
+            </div>
+
+            <div class="typography-item">
+              <div class="subtitle-3">Lorem Ipsum</div>
+              <div class="size-label">Subtitle 3 (14px)</div>
+            </div>
+
+            <!-- Body Text -->
+            <div class="typography-item">
+              <div class="body-1">Lorem Ipsum</div>
+              <div class="size-label">Body 1 (16px)</div>
+            </div>
+
+            <div class="typography-item">
+              <div class="body-2">Lorem Ipsum</div>
+              <div class="size-label">Body 2 (14px)</div>
+            </div>
+          </div>
+
+          <!-- Spacing Section -->
+          <div class="spacing-section section">
+            <h1>Spacing</h1>
+
+            <div class="spacing-item">
+              <div class="spacing-label">1px</div>
+              <div class="spacing-bar" style="width: 1px"></div>
+            </div>
+
+            <div class="spacing-item">
+              <div class="spacing-label">10px</div>
+              <div class="spacing-bar" style="width: 10px"></div>
+            </div>
+
+            <div class="spacing-item">
+              <div class="spacing-label">15px</div>
+              <div class="spacing-bar" style="width: 15px"></div>
+            </div>
+
+            <div class="spacing-item">
+              <div class="spacing-label">20px</div>
+              <div class="spacing-bar" style="width: 20px"></div>
+            </div>
+
+            <div class="spacing-item">
+              <div class="spacing-label">30px</div>
+              <div class="spacing-bar" style="width: 30px"></div>
+            </div>
+
+            <div class="spacing-item">
+              <div class="spacing-label">50px</div>
+              <div class="spacing-bar" style="width: 50px"></div>
+            </div>
+
+            <div class="spacing-item">
+              <div class="spacing-label">70px</div>
+              <div class="spacing-bar" style="width: 70px"></div>
+            </div>
+
+            <div class="spacing-item">
+              <div class="spacing-label">100px</div>
+              <div class="spacing-bar" style="width: 100px"></div>
+            </div>
+
+            <div class="spacing-item">
+              <div class="spacing-label">150px</div>
+              <div class="spacing-bar" style="width: 150px"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Colors -->
+        <div class="design-system-column">
+          <div class="colors-section section">
+            <h1>Colors</h1>
+
+            <!-- Neutral Colors -->
+            <div class="color-group">
+              <div class="color-group-title">Neutral Colors</div>
+
+              <div class="color-item">
+                <div
+                  class="color-swatch"
+                  style="background-color: var(--color-black)"
+                ></div>
+                <div class="color-info">
+                  <div class="color-name">Black</div>
+                  <div class="color-hex">#000000</div>
+                </div>
+              </div>
+
+              <div class="color-item">
+                <div
+                  class="color-swatch"
+                  style="
+                    background-color: var(--color-white);
+                    border: 2px solid var(--grey-300);
+                  "
+                ></div>
+                <div class="color-info">
+                  <div class="color-name">White</div>
+                  <div class="color-hex">#FFFFFF</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Primary Colors -->
+            <div class="color-group">
+              <div class="color-group-title">Primary Colors</div>
+
+              <div class="color-item">
+                <div
+                  class="color-swatch"
+                  style="background-color: var(--primary-lighter)"
+                ></div>
+                <div class="color-info">
+                  <div class="color-name">Lighter</div>
+                  <div class="color-hex">#F8F8FF</div>
+                </div>
+              </div>
+
+              <div class="color-item">
+                <div
+                  class="color-swatch"
+                  style="background-color: var(--primary-light)"
+                ></div>
+                <div class="color-info">
+                  <div class="color-name">Light</div>
+                  <div class="color-hex">#E0E0F2</div>
+                </div>
+              </div>
+
+              <div class="color-item">
+                <div
+                  class="color-swatch"
+                  style="background-color: var(--primary-light-hover)"
+                ></div>
+                <div class="color-info">
+                  <div class="color-name">Light Hover</div>
+                  <div class="color-hex">#C8C8E6</div>
+                </div>
+              </div>
+
+              <div class="color-item">
+                <div
+                  class="color-swatch"
+                  style="background-color: var(--primary-main)"
+                ></div>
+                <div class="color-info">
+                  <div class="color-name">Main</div>
+                  <div class="color-hex">#6A6AFF</div>
+                </div>
+              </div>
+
+              <div class="color-item">
+                <div
+                  class="color-swatch"
+                  style="background-color: var(--primary-main-hover)"
+                ></div>
+                <div class="color-info">
+                  <div class="color-name">Main Hover</div>
+                  <div class="color-hex">#5252CC</div>
+                </div>
+              </div>
+
+              <div class="color-item">
+                <div
+                  class="color-swatch"
+                  style="background-color: var(--primary-dark)"
+                ></div>
+                <div class="color-info">
+                  <div class="color-name">Dark</div>
+                  <div class="color-hex">#3A3A99</div>
+                </div>
+              </div>
+
+              <div class="color-item">
+                <div
+                  class="color-swatch"
+                  style="background-color: var(--primary-dark-hover)"
+                ></div>
+                <div class="color-info">
+                  <div class="color-name">Dark Hover</div>
+                  <div class="color-hex">#222266</div>
+                </div>
+              </div>
+
+              <div class="color-item">
+                <div
+                  class="color-swatch"
+                  style="background-color: var(--primary-darker)"
+                ></div>
+                <div class="color-info">
+                  <div class="color-name">Darker</div>
+                  <div class="color-hex">#0A0A33</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Blue Colors -->
+            <div class="color-group">
+              <div class="color-group-title">Blue Colors</div>
+
+              <div class="color-item">
+                <div
+                  class="color-swatch"
+                  style="background-color: var(--blue-main)"
+                ></div>
+                <div class="color-info">
+                  <div class="color-name">Main</div>
+                  <div class="color-hex">#4A90E2</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Red Colors -->
+            <div class="color-group">
+              <div class="color-group-title">Red Colors</div>
+
+              <div class="color-item">
+                <div
+                  class="color-swatch"
+                  style="background-color: var(--red-main)"
+                ></div>
+                <div class="color-info">
+                  <div class="color-name">Main</div>
+                  <div class="color-hex">#E24A4A</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Grey Colors -->
+            <div class="color-group">
+              <div class="color-group-title">Grey Colors</div>
+
+              <div class="color-item">
+                <div
+                  class="color-swatch"
+                  style="background-color: var(--grey-50)"
+                ></div>
+                <div class="color-info">
+                  <div class="color-name">grey-50</div>
+                  <div class="color-hex">#F8F8F8</div>
+                </div>
+              </div>
+
+              <div class="color-item">
+                <div
+                  class="color-swatch"
+                  style="background-color: var(--grey-100)"
+                ></div>
+                <div class="color-info">
+                  <div class="color-name">grey-100</div>
+                  <div class="color-hex">#E0E0E0</div>
+                </div>
+              </div>
+
+              <div class="color-item">
+                <div
+                  class="color-swatch"
+                  style="background-color: var(--grey-200)"
+                ></div>
+                <div class="color-info">
+                  <div class="color-name">grey-200</div>
+                  <div class="color-hex">#C8C8C8</div>
+                </div>
+              </div>
+
+              <div class="color-item">
+                <div
+                  class="color-swatch"
+                  style="background-color: var(--grey-300)"
+                ></div>
+                <div class="color-info">
+                  <div class="color-name">grey-300</div>
+                  <div class="color-hex">#B0B0B0</div>
+                </div>
+              </div>
+
+              <div class="color-item">
+                <div
+                  class="color-swatch"
+                  style="background-color: var(--grey-400)"
+                ></div>
+                <div class="color-info">
+                  <div class="color-name">grey-400</div>
+                  <div class="color-hex">#989898</div>
+                </div>
+              </div>
+
+              <div class="color-item">
+                <div
+                  class="color-swatch"
+                  style="background-color: var(--grey-500)"
+                ></div>
+                <div class="color-info">
+                  <div class="color-name">grey-500</div>
+                  <div class="color-hex">#808080</div>
+                </div>
+              </div>
+
+              <div class="color-item">
+                <div
+                  class="color-swatch"
+                  style="background-color: var(--grey-600)"
+                ></div>
+                <div class="color-info">
+                  <div class="color-name">grey-600</div>
+                  <div class="color-hex">#686868</div>
+                </div>
+              </div>
+
+              <div class="color-item">
+                <div
+                  class="color-swatch"
+                  style="background-color: var(--grey-700)"
+                ></div>
+                <div class="color-info">
+                  <div class="color-name">grey-700</div>
+                  <div class="color-hex">#505050</div>
+                </div>
+              </div>
+
+              <div class="color-item">
+                <div
+                  class="color-swatch"
+                  style="background-color: var(--grey-800)"
+                ></div>
+                <div class="color-info">
+                  <div class="color-name">grey-800</div>
+                  <div class="color-hex">#383838</div>
+                </div>
+              </div>
+
+              <div class="color-item">
+                <div
+                  class="color-swatch"
+                  style="background-color: var(--grey-900)"
+                ></div>
+                <div class="color-info">
+                  <div class="color-name">grey-900</div>
+                  <div class="color-hex">#202020</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
